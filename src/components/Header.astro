@@ -1,0 +1,47 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+
+<header>
+    <nav>
+        <a href={base} class="logo">🎵 Melody Makers</a>
+        <div class="nav-links">
+        <a href={base}>Home</a>
+        <a href={`${base}/about`}>About</a>
+        <a href={`${base}/services`}>Services</a>
+        <a href={`${base}/testimonials`}>Testimonials</a>
+        <a href={`${base}/contact`}>Contact</a>
+        </div>
+    </nav>
+    </header>
+
+    <style>
+    header {
+        background: #181818;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #333;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .logo {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+    }
+    .nav-links a {
+        color: #ccc;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-size: 1rem;
+    }
+    .nav-links a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+</style>

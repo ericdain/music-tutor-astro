@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../Layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="About Me">
+    <div class="container">
+        <h1>About Your Teacher</h1>
+        <img
+        src={`${base}/images/teacher.jpg`}
+        alt="A friendly music teacher"
+        width="300"
+        style="float: left; margin-right: 2rem; margin-bottom: 1rem;"
+        />
+        <p>
+        Hello! I'm Alex, a passionate musician and educator with over 15 years of
+        experience playing and teaching a variety of instruments. My journey in
+        music began with the piano at age six, and I haven't stopped learning
+        since.
+        </p>
+        <p>
+        My teaching philosophy is centered on making music fun and accessible. I
+        believe that anyone can learn to play an instrument with the right
+        guidance and a little bit of practice. I tailor each lesson to the
+        student's individual interests and learning style, whether you're
+        interested in classical, jazz, rock, or pop.
+        </p>
+        <p>
+        My home studio is a comfortable and encouraging environment, equipped
+        with everything we need to start your musical journey.
+        </p>
+    </div>
+</BaseLayout>
